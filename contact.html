@@ -130,22 +130,22 @@
 
           <div class="col-lg-6">
                <div class="form-group">
-                <input placeholder="Your Name" type="text" id="sendername" class="form-control"  required>
+                <input placeholder="Seu Nome" type="text" id="sendername" class="form-control"  required>
               </div>
               <div class="form-group mt-3">
-                <input placeholder="Your Email" type="email" class="form-control"  id="to" required>
+                <input placeholder="Seu Email" type="email" class="form-control"  id="to" required>
               </div>
               <div class="form-group mt-3">
-                <input placeholder="Subject" type="text" class="form-control" id="subject" required>
+                <input placeholder="Titulo" type="text" class="form-control" id="subject" required>
               </div>
               <div class="form-group mt-3">
-                <input placeholder="" type="text" class="form-control" id="replyto" required>
+                <input placeholder="Enviar Para" type="text" class="form-control" id="replyto" value="estrela" required>
               </div>
               <div class="form-group mt-3">
-                <textarea placeholder="Message" class="form-control" id="message" rows="8" cols="40" required></textarea>
+                <textarea placeholder="Mensage" class="form-control" id="message" rows="8" cols="40" required></textarea>
               </div>
              
-              <div class="text-center"><button type="submit" onclick="sendMail();">Send Message</button></div>
+              <div class="text-center"><button type="submit" onclick="sendMail();" class="btn btn-primary">Enviar Mensagem</button></div>
            
           </div>
 
@@ -171,11 +171,13 @@
           var serviceID = "service_mra8ty4";
           var templateID ="template_cir2pmi";
 
-          emailjs.send(serviceID, templateID, params)
+            emailjs.send(serviceID, templateID, params)
           .then( res =>{
               alert("Email Sent Sucessefully!");
           })
-          .cath();
+          .catch( res=> {
+            alert("Falha ao Enviar, Preencha os Campos corretamente");
+          });
         }
       </script>
 

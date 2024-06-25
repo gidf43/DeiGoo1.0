@@ -27,8 +27,20 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-</head>
+  <!--Enserindo o Jsmail-->
+  <script src="index.js"></script>
+      <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init({
+            publicKey: "lL1lagpHPjGgiwQFn",
+          });
+      })();
+</script>
+
+  </head>
 
 <body>
 
@@ -130,20 +142,15 @@
 
           <div class="col-lg-6">
                <div class="form-group">
-                <input placeholder="Seu Nome" type="text" id="sendername" class="form-control"  required>
+                <input placeholder="Seu Nome" type="text" id="name" class="form-control"  required>
               </div>
               <div class="form-group mt-3">
-                <input placeholder="Seu Email" type="email" class="form-control"  id="to" required>
-              </div>
-              <div class="form-group mt-3">
-                <input placeholder="Titulo" type="text" class="form-control" id="subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <input placeholder="Enviar Para" type="text" class="form-control" id="replyto" value="estrela" required>
+                <input placeholder="Seu Email" type="email" class="form-control"  id="mail" required>
               </div>
               <div class="form-group mt-3">
                 <textarea placeholder="Mensage" class="form-control" id="message" rows="8" cols="40" required></textarea>
               </div>
+             <br>
              
               <div class="text-center"><button type="submit" onclick="sendMail();" class="btn btn-primary">Enviar Mensagem</button></div>
            
@@ -154,33 +161,7 @@
       </div>
     </section><!-- End Contact Section -->
 
-      <script>
-        function sendMail(){
-          (function() {
-            emailjs.init("lL1lagpHPjGgiwQFn"); //Account kay 
-
-          })();
-
-          var params = {
-            sendername: document.querySelector("#sendername").velue,
-            to: document.querySelector("#to").velue,
-            subject: document.querySelector("#subject").velue,
-            replyto: document.querySelector("#replyto").velue,
-            message: document.querySelector("#message").velue,
-          };
-          var serviceID = "service_mra8ty4";
-          var templateID ="template_cir2pmi";
-
-            emailjs.send(serviceID, templateID, params)
-          .then( res =>{
-              alert("Email Sent Sucessefully!");
-          })
-          .catch( res=> {
-            alert("Falha ao Enviar, Preencha os Campos corretamente");
-          });
-        }
-      </script>
-
+     
 
 
 

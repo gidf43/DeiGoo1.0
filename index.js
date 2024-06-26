@@ -13,11 +13,14 @@ function sendMail() {
         document.getElementById("name").value = "";
         document.getElementById("mail").value = "";
         document.getElementById("message").value = "";
-        console.log(res);
+        
         alert("Mensagem Enviada com Sucesso!");
     }).catch(
         (err=>console.log(err))
     );
     
 }
+
+
+
  

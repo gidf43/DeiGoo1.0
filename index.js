@@ -16,7 +16,8 @@ function sendMail() {
         
         alert("Mensagem Enviada com Sucesso!");
     }).catch(
-        (err=>console.log(err))
+        (err=>alert(err))
+
     );
     
 }

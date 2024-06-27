@@ -363,11 +363,12 @@ h6 {
   content: "";
   position: absolute;
   right: -100%;
-  top: 20%;
+  top: 30%;
   width: 250%;
   height: 200%;
   z-index: -1;
   background-color: #e8ecf5;
+  /*background-image:url("/assets/img/adicionados/couple.png");*/
   transform: skewY(135deg);
 }
 

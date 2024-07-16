@@ -1,10 +1,3 @@
-/**
-* Template Name: Appland
-* Template URL: https://bootstrapmade.com/free-bootstrap-app-landing-page-template/
-* Updated: Mar 17 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 (function() {
   "use strict";

@@ -30,7 +30,7 @@
   <!--Enserindo o Jsmail-->
   <script src="index.js"></script>
 
-      <script type="text/javascript"
+  <script type="text/javascript"
             src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
 
@@ -40,7 +40,7 @@
             publicKey: "lL1lagpHPjGgiwQFn",
           });
       })();
-</script>
+    </script>
 
   </head>
 
@@ -94,15 +94,25 @@
   </section><!-- End Hero -->
 
 
-    <!-- ======= Contact Section ======= -->
+    <section id="features" class="details">
+        <div class="container">
+            <div class="row content">
+                <h3>Entre em contacto</h3>
+                <p class="fst-italic">
+                  Já sabe como Ter uma Renda Extra na DeiGoo ?.
+                </p>
+                <p>
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                  culpa qui officia deserunt mollit anim id est laborum
+                </p>
+              </div>
+            </div>
+    </Section>
+
     <section id="contact" class="contact">
       <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h3>Entre em Contacto</h3>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
+    
         <div class="row">
 
           <div class="col-lg-6">
@@ -129,31 +139,32 @@
               </div>
             </div>
           </div>
+            
+              <div class="col-lg-6">
+                
+                <div class="email-form">
+                  <div class="form-group">
+                    <input placeholder="Seu Nome" type="text" id="name" class="form-control"  required>
+                  </div>
+                  <div class="form-group mt-3">
+                    <input placeholder="Seu Email" type="email" class="form-control"  id="mail" required>
+                  </div>
+                  <div class="form-group mt-3">
+                    <textarea placeholder="Mensage" class="form-control" id="message" rows="8" cols="40" required></textarea>
+                  </div>
 
-          <div class="col-lg-6">
-               <div class="form-group">
-                <input placeholder="Seu Nome" type="text" id="name" class="form-control"  required>
+                
+                  <div class="text-center"><button type="submit" onclick="sendMail();" class="btn btn-primary">Enviar Mensagem</button></div>
+
+
               </div>
-              <div class="form-group mt-3">
-                <input placeholder="Seu Email" type="email" class="form-control"  id="mail" required>
               </div>
-              <div class="form-group mt-3">
-                <textarea placeholder="Mensage" class="form-control" id="message" rows="8" cols="40" required></textarea>
-              </div>
-             <br>
-             
-              <div class="text-center"><button type="submit" onclick="sendMail();" class="btn btn-primary">Enviar Mensagem</button></div>
            
-          </div>
-
         </div>
 
       </div>
     </section><!-- End Contact Section -->
-
-     
-
-
+    
 
   </main><!-- End #main -->
 
@@ -226,7 +237,7 @@
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>

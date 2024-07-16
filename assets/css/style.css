@@ -416,6 +416,32 @@ h6 {
   margin-left: 20px;
 }
 
+ .download-btn {
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  display: inline-block;
+  padding: 8px 24px 10px 46px;
+  border-radius: 3px;
+  transition: 0.5s;
+  color: #4B0082;
+  background: #ffcd00;
+  position: relative;
+}
+ .download-btn:hover {
+  background: #e3bc22;
+}
+ .download-btn i {
+  font-size: 20px;
+  position: absolute;
+  left: 18px;
+  top: 8.5px;
+}
+ .download-btn+.download-btn {
+  margin-left: 20px;
+}
+
 @media (max-width: 991px) {
   #hero {
     text-align: center;
@@ -461,7 +487,7 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 80px 0;
   overflow: hidden;
 }
 
@@ -470,8 +496,13 @@ section {
 }
 
 .section-title {
-  text-align: center;
+  text-align: left;
+  font-weight: bold;
   padding-bottom: 30px;
+  background-color: #f9f9f922;
+  padding:15px;
+  text-shadow: 1px 1px 1px #c8c6c622;
+  
 }
 
 .section-title h2 {
@@ -592,6 +623,7 @@ section {
 --------------------------------------------------------------*/
 .details .content+.content {
   margin-top: 100px;
+  background-color: #f9f9f922;
 }
 
 .details .content h3 {
@@ -620,53 +652,7 @@ section {
   margin-bottom: 0;
 }
 
-/*--------------------------------------------------------------
-# Gallery
---------------------------------------------------------------*/
-.gallery {
-  overflow: hidden;
-}
 
-.gallery .swiper-slide {
-  transition: 0.3s;
-}
-
-.gallery .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.gallery .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  border: 1px solid #8408a8;
-}
-
-.gallery .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #8408a8;
-}
-
-.gallery .swiper-slide-active {
-  text-align: center;
-}
-
-@media (min-width: 992px) {
-  .gallery .swiper-wrapper {
-    padding: 40px 0;
-  }
-
-  .gallery .swiper-slide-active {
-    border: 6px solid #8408a8;
-    padding: 4px;
-    background: #fff;
-    z-index: 1;
-    transform: scale(1.2);
-    margin-top: 10px;
-    border-radius: 25px;
-  }
-}
 
 /*--------------------------------------------------------------
 # Testimonials

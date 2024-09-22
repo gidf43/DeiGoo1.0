@@ -5,7 +5,7 @@ function sendMail() {
         message: document.getElementById("message").value,
     };
 
-    const serviceID = "service_mra8ty4";
+ const serviceID = "service_mra8ty4";
  const templateID = "template_cir2pmi";
 
  emailjs.send(serviceID,templateID,params).then(
@@ -18,8 +18,7 @@ function sendMail() {
     }).catch(
         (err=>alert(err))
 
-    );
-    
+    );  
 }
 
 
